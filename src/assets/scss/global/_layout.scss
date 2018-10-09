@@ -1,0 +1,76 @@
+a.button {
+	font-weight: 700;
+	text-shadow: none;
+    text-transform: uppercase;
+}
+#main-content {
+	.intro {
+		margin: 60px auto;
+	}
+	.resources-video {
+		margin: 60px auto;
+
+		.grid-y {
+			@include breakpoint(medium) {
+			    height: 325px;
+			  }
+		}
+	}
+
+	.where-to-foster {
+		background: url('/assets/img/kitten-6weeks.jpg') top center no-repeat;
+	    background-size: cover;
+	    color: $white;
+	    text-shadow: 1px 1px 2px $black;
+	    width: 100%;
+
+	    .overlay {
+	    	height: 100%;
+		    width: 100%;
+		    background-color: rgba(0,0,0,0.7);
+		    display: flex;
+		    align-items: flex-end;
+		    justify-content: center;
+		    padding-top: 6rem;
+	    	padding-bottom: 6rem;
+	    }
+	    h2 {
+	    	font-family: "Source Sans Pro", sans-serif;
+	    	text-transform: uppercase;
+   		 	font-weight: 700;
+   		 	font-size: 2rem;
+
+	    	@include breakpoint(medium) {
+			    font-size: 2.5rem;
+			  }
+	    }
+	    .lead {
+	    	font-size: 140%;
+	    }
+	    p {
+	    	font-size: 115%;
+    		font-weight: 700;
+	    }
+	}
+}
+footer {
+	background-color: $teal; 
+	border-top: 5px solid $blue;
+	color: $white;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	span {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-family: $body-font-family;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 20px;
+	}
+	a {
+		color: $white;
+	}
+}

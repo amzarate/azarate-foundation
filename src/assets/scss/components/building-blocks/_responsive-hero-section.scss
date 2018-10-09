@@ -1,0 +1,33 @@
+$hero-height: 100vh;
+
+.hero-section {
+  background: url('/assets/img/hp-hero.jpg') 50% no-repeat;
+  background-size: cover;
+  border-bottom: 5px solid $blue;
+  text-align: center;
+
+  .hero-section-overlay {
+    height: $hero-height;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .hero-section-text {
+      color: $white;
+      text-shadow: 1px 1px 2px $black;
+      margin-bottom: 10px;
+      padding: 0 0.625rem;
+
+      h1 {
+        line-height: 1.3;
+      }
+
+      p {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+    }
+  }
+}
